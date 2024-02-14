@@ -20,6 +20,7 @@ div#sedans {
     background-color: hsl(31, 77%, 52%);
     color: white;
     padding: 32px;
+    height: 100%;
 }
 
 div#sedans>p,
@@ -35,7 +36,7 @@ div#suv {
     background-color: hsl(184, 100%, 22%);
     color: white;
     padding: 32px;
-
+    height: 100%;
 }
 
 div#suv>p,
@@ -51,6 +52,7 @@ div#luxury {
     background-color: hsl(179, 100%, 13%);
     color: white;
     padding: 32px;
+    height: 100%;
 }
 
 div#luxury>p,
@@ -102,22 +104,33 @@ div#sedans>div#button:hover {
     background-color: hsl(31, 77%, 52%);
     border: 2px solid hsl(0, 0%, 95%);
 }
+
 div#sedans>div#button:hover>a {
     color: hsl(0, 0%, 95%);
 }
+
 div#suv>div#button:hover {
     cursor: pointer;
     background-color: hsl(184, 100%, 22%);
     border: 2px solid hsl(0, 0%, 95%);
 }
+
 div#suv>div#button:hover>a {
     color: hsl(0, 0%, 95%);
 }
+
 div#luxury>div#button:hover {
     cursor: pointer;
     background-color: hsl(179, 100%, 13%);
     border: 2px solid hsl(0, 0%, 95%);
 }
+
 div#luxury>div#button:hover>a {
     color: hsl(0, 0%, 95%);
+}
+
+@media screen and (max-width:375px) {
+    div#main {
+        flex-direction: column;
+    }
 }
