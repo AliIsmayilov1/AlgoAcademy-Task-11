@@ -2,78 +2,122 @@
     font-family: Lexend;
     src: url(Lexend_Deca/static/LexendDeca-Light.ttf);
 }
+
 @font-face {
     font-family: Big;
     src: url(Big_Shoulders_Display/static/BigShouldersDisplay-Bold.ttf);
 }
-body{
+
+body {
     display: flex;
     height: 100vh;
     align-items: center;
     justify-content: center;
     font-size: 15px;
 }
+
 div#sedans {
     background-color: hsl(31, 77%, 52%);
     color: white;
     padding: 32px;
 }
-div#sedans>p,a{
+
+div#sedans>p,
+a {
     font-family: Lexend;
 }
-div#sedans>h1{
-font-family: Big;
+
+div#sedans>h1 {
+    font-family: Big;
 }
+
 div#suv {
     background-color: hsl(184, 100%, 22%);
     color: white;
     padding: 32px;
-    
+
 }
-div#suv >p,a{
+
+div#suv>p,
+a {
     font-family: Lexend;
 }
-div#suv >h1{
-font-family: Big;
+
+div#suv>h1 {
+    font-family: Big;
 }
+
 div#luxury {
     background-color: hsl(179, 100%, 13%);
     color: white;
     padding: 32px;
 }
-div#luxury>p,a{
-font-family: Lexend;
+
+div#luxury>p,
+a {
+    font-family: Lexend;
 }
-div#luxury>h1{
+
+div#luxury>h1 {
     font-family: Big;
 }
-div#main{
+
+div#main {
     display: flex;
     width: 800px;
     height: 400px;
 }
-div#button{
+
+div#button {
     margin-top: 64px;
-}
-div#sedans>div#button>a{
-    padding: 12px;
     background-color: white;
-    text-decoration: none;
     border-radius: 16px;
+    width: 110px;
+}
+
+div#button>a {
+    display: inline-block;
+}
+
+div#sedans>div#button>a {
+    padding: 12px;
+    text-decoration: none;
     color: hsl(31, 77%, 52%);
 }
-div#suv>div#button>a{
+
+div#suv>div#button>a {
     padding: 12px;
-    background-color: white;
     text-decoration: none;
-    border-radius: 16px;
     color: hsl(184, 100%, 22%);
 }
-div#luxury>div#button>a{
+
+div#luxury>div#button>a {
     padding: 12px;
-    background-color: white;
     text-decoration: none;
-    border-radius: 16px;
     color: hsl(179, 100%, 13%);
 }
 
+div#sedans>div#button:hover {
+    cursor: pointer;
+    background-color: hsl(31, 77%, 52%);
+    border: 2px solid hsl(0, 0%, 95%);
+}
+div#sedans>div#button:hover>a {
+    color: hsl(0, 0%, 95%);
+}
+div#suv>div#button:hover {
+    cursor: pointer;
+    background-color: hsl(184, 100%, 22%);
+    border: 2px solid hsl(0, 0%, 95%);
+}
+div#suv>div#button:hover>a {
+    color: hsl(0, 0%, 95%);
+}
+div#luxury>div#button:hover {
+    cursor: pointer;
+    background-color: hsl(179, 100%, 13%);
+    border: 2px solid hsl(0, 0%, 95%);
+}
+div#luxury>div#button:hover>a {
+    color: hsl(0, 0%, 95%);
+}
