@@ -1,0 +1,79 @@
+@font-face {
+    font-family: Lexend;
+    src: url(Lexend_Deca/static/LexendDeca-Light.ttf);
+}
+@font-face {
+    font-family: Big;
+    src: url(Big_Shoulders_Display/static/BigShouldersDisplay-Bold.ttf);
+}
+body{
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+}
+div#sedans {
+    background-color: hsl(31, 77%, 52%);
+    color: white;
+    padding: 32px;
+}
+div#sedans>p,a{
+    font-family: Lexend;
+}
+div#sedans>h1{
+font-family: Big;
+}
+div#suv {
+    background-color: hsl(184, 100%, 22%);
+    color: white;
+    padding: 32px;
+    
+}
+div#suv >p,a{
+    font-family: Lexend;
+}
+div#suv >h1{
+font-family: Big;
+}
+div#luxury {
+    background-color: hsl(179, 100%, 13%);
+    color: white;
+    padding: 32px;
+}
+div#luxury>p,a{
+font-family: Lexend;
+}
+div#luxury>h1{
+    font-family: Big;
+}
+div#main{
+    display: flex;
+    width: 800px;
+    height: 400px;
+}
+div#button{
+    margin-top: 64px;
+}
+div#sedans>div#button>a{
+    padding: 12px;
+    background-color: white;
+    text-decoration: none;
+    border-radius: 16px;
+    color: hsl(31, 77%, 52%);
+}
+div#suv>div#button>a{
+    padding: 12px;
+    background-color: white;
+    text-decoration: none;
+    border-radius: 16px;
+    color: hsl(184, 100%, 22%);
+}
+div#luxury>div#button>a{
+    padding: 12px;
+    background-color: white;
+    text-decoration: none;
+    border-radius: 16px;
+    color: hsl(179, 100%, 13%);
+}
+
